@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            margin-left: 50px;
+            margin-top: 50px;
+            margin-right: 50px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .center_p {
+            text-align: center;
+
+        }
+
+        /*.bg {
+            !* The image used *!
+            background-image: url("img_girl.jpg");
+
+            !* Full height *!
+            height: 100%;
+
+            !* Center and scale the image nicely *!
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }*/
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="center_p">
+        <h1>
+           Add Cars
+        </h1>
+    </div>
+    <form  enctype="multipart/form-data"  action="/addcars/post/" method="post">
+        <input type="file" name="imgUploader" multiple />
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Make</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="make" name="make" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Model</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="model" name="model" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">AC</label>
+            </div>
+            <div class="col-75" id="myDIV">
+                <select id="ac_nonac" name="ac_nonac">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Wifi</label>
+            </div>
+            <div class="col-75" id="myDIV">
+                <select id="wifi" name="wifi">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Price per Km</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="priceperkm" name="priceperkm" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Night Charge</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="night_charge" name="night_charge" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Toll Charge</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="tolls_parking" name="tolls_parking" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn">
+                <input type="submit" value="Submit" onclick="myFunction()">
+            </div>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>

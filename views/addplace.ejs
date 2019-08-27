@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            margin-left: 50px;
+            margin-top: 50px;
+            margin-right: 50px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .center_p {
+            text-align: center;
+
+        }
+
+        /*.bg {
+            !* The image used *!
+            background-image: url("img_girl.jpg");
+
+            !* Full height *!
+            height: 100%;
+
+            !* Center and scale the image nicely *!
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }*/
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="center_p">
+        <h1>
+            Add Place
+        </h1>
+    </div>
+    <form  enctype="multipart/form-data"  action="/addplace/post/" method="post">
+        <label>photo size  540 * 370</label>
+        <input type="file" name="imgUploader" multiple/>
+        <label>photo size  350 * 400</label>
+        <input type="file" name="gallery" multiple />
+        <div class="row">
+            <div class="col-25">
+                <label for="country">City</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="city" name="city" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Place Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="place_name" name="place_name" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Description</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="place_desc" name="place_desc" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Places to visit</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="place_tovisit" name="place_tovisit" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Distance</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="place_distance" name="place_distance" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="country">Duration</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="place_duration" name="place_duration" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn">
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>

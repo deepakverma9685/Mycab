@@ -38,27 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 
 <!-- header -->
-<header>
-    <div class="container">
-        <!-- nav -->
-        <nav class="py-md-4 py-3 d-lg-flex">
-            <div id="logo">
-                <h1 class="mt-md-0 mt-2"> <a href="/"><span class="fa fa-map-signs"></span> Grand Tour </a></h1>
-            </div>
-            <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
-            <input type="checkbox" id="drop" />
-            <ul class="menu ml-auto mt-1">
-                <li class=""><a href="/">Home</a></li>
-                <li class=""><a href="/about">About Us</a></li>
-                <li class=""><a href="/services">Services</a></li>
-                <li class=""><a href="/packages">Packages</a></li>
-                <li class="active"><a href="/contact">Contact</a></li>
-                <li class="booking"><a href="/booking">Book Now</a></li>
-            </ul>
-        </nav>
-        <!-- //nav -->
-    </div>
-</header>
+<% include ../views/header.ejs%>
 <!-- //header -->
 
 <!-- banner -->
@@ -80,8 +60,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
 
                 <h6>Location</h6>
-                <p>The company name
-                    <br>Addison Township, IL, USA. </p>
+                <p>SAI TOURS
+                    <br>H.No. C-8 Virangana Laxmi Bai Complex Kotra Sulatanabad Bhopal Madhya Pradesh</p>
             </li>
 
             <li class="col-md-4 col-sm-6 adress-w3pvt-info mt-sm-0 mt-4">
@@ -89,8 +69,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="fa fa-envelope-open-o"></span>
                 </div>
                 <h6>Phone & Email</h6>
-                <p>+(122) 123 456 7890</p>
-                <a href="mailto:info@example.com" class="mail">info@examplemail.com</a>
+                <p>+91-8717816127</p>
+                <p>+91-8770851881</p>
+                <a href="mailto:info@example.com" class="mail">sainathtravels6@gmail.com</a>
             </li>
             <li class="col-md-4 col-sm-6 adress-w3pvt-info mt-md-0 mt-4">
 
@@ -101,9 +82,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <h6>Stay In Touch</h6>
                 <ul class="social_section_1info mt-2">
                     <li class="mb-2 facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                    <li class="mb-2 twitter"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                    <li class="google"><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                    <li class="linkedin"><a href="#"><span class="fa fa-linkedin"></span></a></li>
                 </ul>
             </li>
         </ul>
@@ -144,80 +122,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- map -->
 <div class="map p-2">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.728106568!2d-0.24168153701090248!3d51.52877184090542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2sin!4v1544074523717"></iframe>
-</div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6600587254949!2d77.39556552918894!3d23.21977819905338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c42c378f0c657%3A0x1bc350627a64448e!2sVeerangana+laxmibai+complex!5e0!3m2!1sen!2sin!4v1566577567539!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 <!-- //map -->
 
 <!--footer -->
-<footer>
-    <section class="footer footer_w3layouts_section_1its py-5">
-        <div class="container py-lg-4 py-3">
-            <div class="row footer-top">
-                <div class="col-lg-3 col-sm-6 footer-grid_section_1its_w3">
-                    <div class="footer-title">
-                        <h3>Address</h3>
-                    </div>
-                    <div class="footer-text">
-                        <p>Location : 1234 lock, Charlotte, North Carolina, United States</p>
-                        <p>Phone : +12 534894364</p>
-                        <p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
-                        <p>Fax : +12 534894364</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 footer-grid_section mt-sm-0 mt-4">
-                    <div class="footer-title">
-                        <h3>About Us</h3>
-                    </div>
-                    <div class="footer-text">
-                        <p>Vivamus magna justo, laci niats eget consectetur sed, conval lis at tellus. Nulla quis lorem ipnt libero.
-                            Lorem ipsum dolor.</p>
-                    </div>
-                    <ul class="social_section_1info">
-                        <li class="mb-2 facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                        <li class="mb-2 twitter"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        <li class="google"><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                        <li class="linkedin"><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4 footer-grid_section_1its_w3">
-                    <div class="footer-title">
-                        <h3>Travel Places</h3>
-                    </div>
-                    <div class="row">
-                        <ul class="col-6 links">
-                            <li><a href="#choose" class="scroll">New Zealand </a></li>
-                            <li><a href="#overview" class="scroll">Paris, France </a></li>
-                            <li><a href="#pricing" class="scroll">Los Angles</a></li>
-                            <li><a href="#faq" class="scroll"> Darlington</a></li>
-                            <li><a href="#testimonials" class="scroll">Canada </a></li>
-                            <li><a href="#contact" class="scroll"> South Africa </a></li>
-                        </ul>
-                        <ul class="col-6 links">
-                            <li><a href="#">Spain </a></li>
-                            <li><a href="#">Turkey </a></li>
-                            <li><a href="#faq" class="scroll">Europe </a></li>
-                            <li><a href="#">Italy </a></li>
-                            <li><a href="#">Sweden </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mt-lg-0 mt-4 footer-grid_section_1its_w3">
-                    <div class="footer-title">
-                        <h3>Newsletter</h3>
-                    </div>
-                    <div class="footer-text">
-                        <p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
-                        <form action="#" method="post">
-                            <input type="email" name="Email" placeholder="Enter your email..." required="">
-                            <button class="btn1"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                            <div class="clearfix"> </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</footer>
+<% include ../views/footer.ejs%>
 <!-- //footer -->
 
 <!-- copyright -->

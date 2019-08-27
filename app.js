@@ -11,6 +11,10 @@ var contactRouter = require('./routes/contact');
 var packagesRouter = require('./routes/packages');
 var servicesRouter = require('./routes/services');
 var usersRouter = require('./routes/users');
+var addCarsRouter = require('./routes/addCars');
+var thankyouCars = require('./routes/thankyouCars');
+var thankyouPlace = require('./routes/thankyouPlace');
+var addPlace = require('./routes/addPlace');
 
 var app = express();
 
@@ -32,6 +36,10 @@ app.use('/booking',bookingRouter);
 app.use('/contact', contactRouter);
 app.use('/packages', packagesRouter);
 app.use('/services', servicesRouter);
+app.use('/addcars', addCarsRouter);
+app.use('/thankyouCars', thankyouCars);
+app.use('/addplace', addPlace);
+app.use('/thankyouPlace', thankyouPlace);
 
 
 //ese hi he
