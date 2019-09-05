@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <h4 class="text-wh">tristique senectus et netus et malesuada</h4>
                                 <div class="buttons mt-4">
                                     <a href="/about" class="btn mr-2">About Us</a>
-                                    <a href="/booking" class="btn">Book a Tour</a>
+                                    <a href="/packages" class="btn">Book a Tour</a>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <h4 class="text-wh">tristique senectus et netus et malesuada</h4>
                                 <div class="buttons mt-4">
                                     <a href="/about" class="btn mr-2">About Us</a>
-                                    <a href="/booking" class="btn">Book a Tour</a>
+                                    <a href="/packages" class="btn">Book a Tour</a>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <h4 class="text-wh">tristique senectus et netus et malesuada</h4>
                                 <div class="buttons mt-4">
                                     <a href="/about" class="btn mr-2">About Us</a>
-                                    <a href="/booking" class="btn">Book a Tour</a>
+                                    <a href="/packages" class="btn">Book a Tour</a>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <h4 class="text-wh">tristique senectus et netus et malesuada</h4>
                                 <div class="buttons mt-4">
                                     <a href="/about" class="btn mr-2">About Us</a>
-                                    <a href="/booking" class="btn">Book a Tour</a>
+                                    <a href="/packages" class="btn">Book a Tour</a>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +253,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     Phasellus sed aliquam leo a massa eu fringilla. Integer ultrices finibus sed nisi. in convallis felis dapibus
                     sit amet.</p>
                 <div class="text-left mt-4">
-                    <a href="/booking">Book Now</a>
+                    <a href="/packages">Book Now</a>
                 </div>
             </div>
         </div>
@@ -283,9 +283,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
                 <div class="destinations-info">
-                    <div class="caption mb-lg-3">
+                    <div class="caption mb-lg-3" data-id="<%= data.id%>" onclick = "myFunction(<%= data.id%>)">
                         <h4><%= data.place_name%></h4>
-                        <a href="/booking">Book Now</a>
+                        <a href="/booking/<%= data.id %>">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -312,7 +312,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </a>
 </div>
 <!-- move top -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<script>
+    jQuery(document).ready(function($){
+        $('.getdata').click(function(){
+            var getData = $(this).attr('data-id');
+            console.log(getData);
+            Cookies.set('booking-id', getData);
+        });
+    });
+    function myFunction(id) {
+        console.log("-------------------- my id ",id);
 
+    }
+
+
+</script>
 
 </body>
 </html>

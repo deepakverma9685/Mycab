@@ -58,13 +58,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <p class="text mt-2 mb-5 text-center">Vestibulum tellus neque, sodales vel mauris at, rhoncus finibus augue. Vestibulum urna ligula, molestie at ante ut, finibus vulputate felis.</p>
         <div class="row">
             <% data.forEach(function(data){ %>
-            <div class="col-lg-3 col-sm-6 mb-5 getdata " data-id="<%= data.id%>" onclick = "myFunction()">
+            <div class="col-lg-3 col-sm-6 mb-5 getdata " data-id="<%= data.id%>" onclick = "myFunction(<%= data.id%>)">
                 <div class="image-tour position-relative">
                     <img src= "images/<%= data.place_images %>" alt="" class="img-fluid"/>
                     <p><span class="fa fa-tags"></span> <span>20$</span></p>
                 </div>
                 <div class="package-info">
-                    <a href="booking">Book Now</a>
+                    <a href="/booking/<%= data.id %>">Book Now</a>
                     <h6 class="mt-1"><span class="fa fa-map-marker mr-2"></span><%= data.city%></h6>
                     <h5 class="my-2"><%= data.place_name%></h5>
                     <p class=""><%= data.place_desc %></p>
@@ -74,6 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <% })%>
+            <!--<a href="/dashboard?id=ANDROID" id="ANDROID">ANDROID</a>-->
         </div>
     </div>
 </section>
@@ -101,9 +102,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
                 <div class="destinations-info">
-                    <div class="caption mb-lg-3">
+                    <div class="caption mb-lg-3" data-id="<%= data.id%>" onclick = "myFunction(<%= data.id%>)">
                         <h4><%= data.place_name%></h4>
-                        <a href="booking">Book Now</a>
+                        <a href="/booking/<%= data.id %>">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -140,11 +141,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             Cookies.set('booking-id', getData);
         });
     });
-    myFunction();
-    function myFunction() {
-        var getData = $(this).attr('data-id');
+    function myFunction(id) {
+        console.log("-------------------- my id ",id);
 
-        //document.cookie = "cookiename=cookievalue"
     }
 
 
