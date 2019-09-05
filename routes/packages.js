@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
                 }
             }
             res.render('packages',{data:data,dataTwo:dataTwo});
-            console.log("result------------- >>> ",data);
+           // console.log("result------------- >>> ",data);
         }
     })
 });

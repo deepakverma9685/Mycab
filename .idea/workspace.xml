@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28f2f3fa-afc3-45e2-b290-2e5e32741ae0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change beforePath="$PROJECT_DIR$/routes/booking.js" afterPath="$PROJECT_DIR$/routes/booking.js" />
       <change beforePath="$PROJECT_DIR$/routes/packages.js" afterPath="$PROJECT_DIR$/routes/packages.js" />
-      <change beforePath="$PROJECT_DIR$/views/booking.ejs" afterPath="$PROJECT_DIR$/views/booking.ejs" />
-      <change beforePath="$PROJECT_DIR$/views/header.ejs" afterPath="$PROJECT_DIR$/views/header.ejs" />
-      <change beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
-      <change beforePath="$PROJECT_DIR$/views/packages.ejs" afterPath="$PROJECT_DIR$/views/packages.ejs" />
-      <change beforePath="$PROJECT_DIR$/views/services.ejs" afterPath="$PROJECT_DIR$/views/services.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,11 +26,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="packages.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="packages.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/packages.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
               <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="packages.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/packages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -100,7 +102,6 @@
         <option value="$PROJECT_DIR$/routes/addPlace.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/routes/services.js" />
-        <option value="$PROJECT_DIR$/routes/packages.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/contact.ejs" />
         <option value="$PROJECT_DIR$/routes/booking.js" />
@@ -110,6 +111,7 @@
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/views/services.ejs" />
         <option value="$PROJECT_DIR$/views/packages.ejs" />
+        <option value="$PROJECT_DIR$/routes/packages.js" />
       </list>
     </option>
   </component>
@@ -124,7 +126,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="5" />
     <option name="y" value="131" />
     <option name="width" value="1346" />
@@ -254,15 +256,15 @@
       <workItem from="1567322079050" duration="4403000" />
       <workItem from="1567354422976" duration="12904000" />
       <workItem from="1567440951503" duration="5378000" />
-      <workItem from="1567700775355" duration="2406000" />
+      <workItem from="1567700775355" duration="2413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93445000" />
+    <option name="totallyTimeSpent" value="93452000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15252976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -568,14 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/packages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -676,6 +670,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/packages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
