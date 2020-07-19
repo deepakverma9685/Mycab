@@ -1,3 +1,3 @@
 // for dev = false and for production = true;
-var environment = false;
+var environment = true;
 module.exports = environment;
