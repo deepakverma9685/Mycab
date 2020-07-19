@@ -15,6 +15,7 @@ var addCarsRouter = require('./routes/addCars');
 var thankyouCars = require('./routes/thankyouCars');
 var thankyouPlace = require('./routes/thankyouPlace');
 var addPlace = require('./routes/addPlace');
+var vehiclesRouter = require('./routes/vehicles');
 
 var app = express();
 
@@ -39,7 +40,7 @@ app.use('/services', servicesRouter);
 app.use('/addcars', addCarsRouter);
 app.use('/thankyouCars', thankyouCars);
 app.use('/addplace', addPlace);
-app.use('/thankyouPlace', thankyouPlace);
+app.use('/vehicles', vehiclesRouter);
 
 
 //ese hi he
